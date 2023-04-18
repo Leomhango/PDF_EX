@@ -5,7 +5,7 @@ from .models import Content
 
 
 def main(request):
-    content = Content.objects.get(title='Long Distance Relationship')
+    content = Content.objects.get(id=1)
     paragraphs = content.content
     paragraphs = json.loads(paragraphs)  # convert content.content into json
     context = {
